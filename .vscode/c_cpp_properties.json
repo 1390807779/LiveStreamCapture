@@ -1,0 +1,33 @@
+{
+    "configurations": [
+        {
+            "name": "GCC",
+            "includePath": [
+                "D:/msys64/usr/include",
+                "${workspaceFolder}/**",
+                "D:/msys64/mingw64/include/c++/12.2.0",
+                "D:/msys64/mingw64",
+                "D:/msys64/mingw64/include",
+                "D:/msys64/usr/local/include",
+                "${workspaceFolder}/mediaTool",
+                "${workspaceFolder}/gui",
+                "${workspaceFolder}/src",
+                "D:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/",
+                "D:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui",
+                "D:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore",
+                "D:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets",
+                "D:/Qt/Qt5.14.2/5.14.2/mingw73_64"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "D:/msys64/mingw64/bin/gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}

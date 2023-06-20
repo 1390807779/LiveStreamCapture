@@ -1,0 +1,106 @@
+[
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-ImediaTool", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\f\\ffmpeg\\5.1.2\\ffb18c58250d4381b87edc488cd4e5f8\\include", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\b\\boost\\1.81.0\\d6985fff1dea48dbb82ca717348f8984\\include", "-DNDEBUG", "-o", "build\\.objs\\media\\mingw\\x86_64\\release\\mediaTool\\AudioSwrContext.cpp.obj", "mediaTool\\AudioSwrContext.cpp"],
+  "file": "mediaTool\\AudioSwrContext.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-ImediaTool", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\f\\ffmpeg\\5.1.2\\ffb18c58250d4381b87edc488cd4e5f8\\include", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\b\\boost\\1.81.0\\d6985fff1dea48dbb82ca717348f8984\\include", "-DNDEBUG", "-o", "build\\.objs\\media\\mingw\\x86_64\\release\\mediaTool\\AVMediaTool.cpp.obj", "mediaTool\\AVMediaTool.cpp"],
+  "file": "mediaTool\\AVMediaTool.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-ImediaTool", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\f\\ffmpeg\\5.1.2\\ffb18c58250d4381b87edc488cd4e5f8\\include", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\b\\boost\\1.81.0\\d6985fff1dea48dbb82ca717348f8984\\include", "-DNDEBUG", "-o", "build\\.objs\\media\\mingw\\x86_64\\release\\mediaTool\\Clock.cpp.obj", "mediaTool\\Clock.cpp"],
+  "file": "mediaTool\\Clock.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-ImediaTool", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\f\\ffmpeg\\5.1.2\\ffb18c58250d4381b87edc488cd4e5f8\\include", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\b\\boost\\1.81.0\\d6985fff1dea48dbb82ca717348f8984\\include", "-DNDEBUG", "-o", "build\\.objs\\media\\mingw\\x86_64\\release\\mediaTool\\Decoder.cpp.obj", "mediaTool\\Decoder.cpp"],
+  "file": "mediaTool\\Decoder.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-ImediaTool", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\f\\ffmpeg\\5.1.2\\ffb18c58250d4381b87edc488cd4e5f8\\include", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\b\\boost\\1.81.0\\d6985fff1dea48dbb82ca717348f8984\\include", "-DNDEBUG", "-o", "build\\.objs\\media\\mingw\\x86_64\\release\\mediaTool\\Encoder.cpp.obj", "mediaTool\\Encoder.cpp"],
+  "file": "mediaTool\\Encoder.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-ImediaTool", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\f\\ffmpeg\\5.1.2\\ffb18c58250d4381b87edc488cd4e5f8\\include", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\b\\boost\\1.81.0\\d6985fff1dea48dbb82ca717348f8984\\include", "-DNDEBUG", "-o", "build\\.objs\\media\\mingw\\x86_64\\release\\mediaTool\\Frame.cpp.obj", "mediaTool\\Frame.cpp"],
+  "file": "mediaTool\\Frame.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-ImediaTool", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\f\\ffmpeg\\5.1.2\\ffb18c58250d4381b87edc488cd4e5f8\\include", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\b\\boost\\1.81.0\\d6985fff1dea48dbb82ca717348f8984\\include", "-DNDEBUG", "-o", "build\\.objs\\media\\mingw\\x86_64\\release\\mediaTool\\ImageSwsContext.cpp.obj", "mediaTool\\ImageSwsContext.cpp"],
+  "file": "mediaTool\\ImageSwsContext.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-ImediaTool", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\f\\ffmpeg\\5.1.2\\ffb18c58250d4381b87edc488cd4e5f8\\include", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\b\\boost\\1.81.0\\d6985fff1dea48dbb82ca717348f8984\\include", "-DNDEBUG", "-o", "build\\.objs\\media\\mingw\\x86_64\\release\\mediaTool\\MathFunction.cpp.obj", "mediaTool\\MathFunction.cpp"],
+  "file": "mediaTool\\MathFunction.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-ImediaTool", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\f\\ffmpeg\\5.1.2\\ffb18c58250d4381b87edc488cd4e5f8\\include", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\b\\boost\\1.81.0\\d6985fff1dea48dbb82ca717348f8984\\include", "-DNDEBUG", "-o", "build\\.objs\\media\\mingw\\x86_64\\release\\mediaTool\\MediaDataOutput.cpp.obj", "mediaTool\\MediaDataOutput.cpp"],
+  "file": "mediaTool\\MediaDataOutput.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-ImediaTool", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\f\\ffmpeg\\5.1.2\\ffb18c58250d4381b87edc488cd4e5f8\\include", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\b\\boost\\1.81.0\\d6985fff1dea48dbb82ca717348f8984\\include", "-DNDEBUG", "-o", "build\\.objs\\media\\mingw\\x86_64\\release\\mediaTool\\Packet.cpp.obj", "mediaTool\\Packet.cpp"],
+  "file": "mediaTool\\Packet.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-ImediaTool", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\f\\ffmpeg\\5.1.2\\ffb18c58250d4381b87edc488cd4e5f8\\include", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\b\\boost\\1.81.0\\d6985fff1dea48dbb82ca717348f8984\\include", "-DNDEBUG", "-o", "build\\.objs\\media\\mingw\\x86_64\\release\\mediaTool\\VideoState.cpp.obj", "mediaTool\\VideoState.cpp"],
+  "file": "mediaTool\\VideoState.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-ImediaTool", "-Igui", "-DSDL_MAIN_HANDLED", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\l\\libsdl\\2.26.4\\a0ae42c255484374a30ee1b3f63de047\\include", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\l\\libsdl\\2.26.4\\a0ae42c255484374a30ee1b3f63de047\\include\\SDL2", "-DNDEBUG", "-o", "build\\.objs\\player\\mingw\\x86_64\\release\\gui\\FormatBridge.cpp.obj", "gui\\FormatBridge.cpp"],
+  "file": "gui\\FormatBridge.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-ImediaTool", "-Igui", "-DSDL_MAIN_HANDLED", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\l\\libsdl\\2.26.4\\a0ae42c255484374a30ee1b3f63de047\\include", "-I", "C:\\Users\\13908\\AppData\\Local\\.xmake\\packages\\l\\libsdl\\2.26.4\\a0ae42c255484374a30ee1b3f63de047\\include\\SDL2", "-DNDEBUG", "-o", "build\\.objs\\player\\mingw\\x86_64\\release\\gui\\PlayWindow.cpp.obj", "gui\\PlayWindow.cpp"],
+  "file": "gui\\PlayWindow.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\bin\\moc.exe", "-DQT_NO_DEBUG", "-DQT_DEPRECATED_WARNINGS", "-DQT_GUI_LIB", "-DQT_WIDGETS_LIB", "-DQT_CORE_LIB", "-ID:/msys64/home/ffmpeg/include", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include", "-Igui", "-Isrc", "-Id:/LiveStreamCapture/build/.gens/LiveStreamCapture/mingw/x86_64/release/rules/qt/ui", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui/5.14.2", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui/5.14.2/QtGui", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/5.14.2", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/5.14.2/QtWidgets", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/5.14.2", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/5.14.2/QtCore", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/win32-g++", "gui\\FormatBridge.h", "-o", "build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\gui\\moc_FormatBridge.cpp"],
+  "file": "build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\gui\\moc_FormatBridge.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-Igui", "-Isrc", "-Id:\\LiveStreamCapture\\build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\rules\\qt\\ui", "-DQT_NO_DEBUG", "-DQT_DEPRECATED_WARNINGS", "-DQT_GUI_LIB", "-DQT_WIDGETS_LIB", "-DQT_CORE_LIB", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui\\5.14.2\\QtGui", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets\\5.14.2\\QtWidgets", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore\\5.14.2\\QtCore", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\mkspecs\\win32-g++", "-DNDEBUG", "-o", "build\\.objs\\LiveStreamCapture\\mingw\\x86_64\\release\\gens\\gui\\moc_FormatBridge.cpp.obj", "build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\gui\\moc_FormatBridge.cpp"],
+  "file": "build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\gui\\moc_FormatBridge.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\bin\\moc.exe", "-DQT_NO_DEBUG", "-DQT_DEPRECATED_WARNINGS", "-DQT_GUI_LIB", "-DQT_WIDGETS_LIB", "-DQT_CORE_LIB", "-ID:/msys64/home/ffmpeg/include", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include", "-Igui", "-Isrc", "-Id:/LiveStreamCapture/build/.gens/LiveStreamCapture/mingw/x86_64/release/rules/qt/ui", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui/5.14.2", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui/5.14.2/QtGui", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/5.14.2", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/5.14.2/QtWidgets", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/5.14.2", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/5.14.2/QtCore", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/win32-g++", "gui\\PlayWindow.h", "-o", "build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\gui\\moc_PlayWindow.cpp"],
+  "file": "build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\gui\\moc_PlayWindow.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-Igui", "-Isrc", "-Id:\\LiveStreamCapture\\build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\rules\\qt\\ui", "-DQT_NO_DEBUG", "-DQT_DEPRECATED_WARNINGS", "-DQT_GUI_LIB", "-DQT_WIDGETS_LIB", "-DQT_CORE_LIB", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui\\5.14.2\\QtGui", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets\\5.14.2\\QtWidgets", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore\\5.14.2\\QtCore", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\mkspecs\\win32-g++", "-DNDEBUG", "-o", "build\\.objs\\LiveStreamCapture\\mingw\\x86_64\\release\\gens\\gui\\moc_PlayWindow.cpp.obj", "build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\gui\\moc_PlayWindow.cpp"],
+  "file": "build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\gui\\moc_PlayWindow.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\bin\\moc.exe", "-DQT_NO_DEBUG", "-DQT_DEPRECATED_WARNINGS", "-DQT_GUI_LIB", "-DQT_WIDGETS_LIB", "-DQT_CORE_LIB", "-ID:/msys64/home/ffmpeg/include", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include", "-Igui", "-Isrc", "-Id:/LiveStreamCapture/build/.gens/LiveStreamCapture/mingw/x86_64/release/rules/qt/ui", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui/5.14.2", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtGui/5.14.2/QtGui", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/5.14.2", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtWidgets/5.14.2/QtWidgets", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/5.14.2", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include/QtCore/5.14.2/QtCore", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/include", "-ID:/Qt/Qt5.14.2/5.14.2/mingw73_64/mkspecs/win32-g++", "src\\mainwindow.h", "-o", "build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\src\\moc_mainwindow.cpp"],
+  "file": "build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\src\\moc_mainwindow.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-Igui", "-Isrc", "-Id:\\LiveStreamCapture\\build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\rules\\qt\\ui", "-DQT_NO_DEBUG", "-DQT_DEPRECATED_WARNINGS", "-DQT_GUI_LIB", "-DQT_WIDGETS_LIB", "-DQT_CORE_LIB", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui\\5.14.2\\QtGui", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets\\5.14.2\\QtWidgets", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore\\5.14.2\\QtCore", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\mkspecs\\win32-g++", "-DNDEBUG", "-o", "build\\.objs\\LiveStreamCapture\\mingw\\x86_64\\release\\gens\\src\\moc_mainwindow.cpp.obj", "build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\src\\moc_mainwindow.cpp"],
+  "file": "build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\src\\moc_mainwindow.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-Igui", "-Isrc", "-Id:\\LiveStreamCapture\\build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\rules\\qt\\ui", "-DQT_NO_DEBUG", "-DQT_DEPRECATED_WARNINGS", "-DQT_GUI_LIB", "-DQT_WIDGETS_LIB", "-DQT_CORE_LIB", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui\\5.14.2\\QtGui", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets\\5.14.2\\QtWidgets", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore\\5.14.2\\QtCore", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\mkspecs\\win32-g++", "-DNDEBUG", "-o", "build\\.objs\\LiveStreamCapture\\mingw\\x86_64\\release\\src\\main.cpp.obj", "src\\main.cpp"],
+  "file": "src\\main.cpp"
+},
+{
+  "directory": "d:\\LiveStreamCapture",
+  "arguments": ["D:\\msys64\\mingw64\\bin\\x86_64-w64-mingw32-g++.exe", "-c", "-m64", "-fvisibility=hidden", "-fvisibility-inlines-hidden", "-O3", "-std=c++17", "-ID:\\msys64\\home\\ffmpeg\\include", "-ID:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-Igui", "-Isrc", "-Id:\\LiveStreamCapture\\build\\.gens\\LiveStreamCapture\\mingw\\x86_64\\release\\rules\\qt\\ui", "-DQT_NO_DEBUG", "-DQT_DEPRECATED_WARNINGS", "-DQT_GUI_LIB", "-DQT_WIDGETS_LIB", "-DQT_CORE_LIB", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtGui\\5.14.2\\QtGui", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtWidgets\\5.14.2\\QtWidgets", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore\\5.14.2", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include\\QtCore\\5.14.2\\QtCore", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\include", "-I", "D:\\Qt\\Qt5.14.2\\5.14.2\\mingw73_64\\mkspecs\\win32-g++", "-DNDEBUG", "-o", "build\\.objs\\LiveStreamCapture\\mingw\\x86_64\\release\\src\\mainwindow.cpp.obj", "src\\mainwindow.cpp"],
+  "file": "src\\mainwindow.cpp"
+}]
