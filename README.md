@@ -1,6 +1,9 @@
 # LiveStreamCapture
 ## cpp+ffmpeg 练手demo
 **项目组成：cpp ffmpeg qt sdl2 js**
+  
+  
+***学习参考ffmplay 解码，播放等逻辑***
 * 需配合Greasy Fork网站的油猴脚本：  
 
   * 学习自用 LiveStreamCapture 配套脚本 目前仅支持douyu  
@@ -18,7 +21,7 @@
   * 整理代码
   * 整理fix bug代码，完善设计
   * 完善转码代码
-  * 优化编码导致内存过高问题(1-2GB)  
+  * 优化编码导致内存过高问题(与视频源画质相关，需要到一定内存才不增长，应与编码器内存缓冲区相关)  
   
 ### 已知问题：
   * 1.qt 选择文件夹函数偶尔导致窗口闪退
