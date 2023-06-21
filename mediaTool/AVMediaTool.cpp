@@ -102,7 +102,10 @@ std::shared_ptr<Frame> AVMediaTool::getPlaceholderFrameWithTypeAndFrame(AVMediaT
         break;
     }
     av_frame_get_buffer(initFrame, 0);
-    av_samples_set_silence(initFrame->data, 0, initFrame->nb_samples, initFrame->ch_layout.nb_channels, static_cast<AVSampleFormat>(initFrame->format));
+    if (type == AVMEDIA_TYPE_AUDIO)
+    {
+        av_samples_set_silence(initFrame->data, 0, initFrame->nb_samples, initFrame->ch_layout.nb_channels, static_cast<AVSampleFormat>(initFrame->format));
+    }
     shared_ptr<Frame> out = make_shared<Frame>(initFrame);
     av_frame_free(&initFrame);
     return out;
