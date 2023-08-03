@@ -289,7 +289,7 @@ int PlayWindow::initAudio(shared_ptr<AudioParamOutput> audioParam)
 int PlayWindow::updateVideoWithSDL()
 {
     int time = 10;
-    delayForEvent(10);
+    delayForEvent(time);
     while (!isQuit)
     {
         int ret = updateVideo(&time);

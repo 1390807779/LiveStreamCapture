@@ -100,6 +100,7 @@ void MainWindow::setSaveDir()
 {
     QFileDialog *dialog = new QFileDialog(this);
     dialog->setFileMode(QFileDialog::FileMode::Directory);
+    dialog->setOption(QFileDialog::DontUseNativeDialog);
     dialog->exec();
     QList<QUrl> lists = dialog->selectedUrls();
     for (auto &&url : lists)
