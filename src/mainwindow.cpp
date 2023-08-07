@@ -108,8 +108,6 @@ void MainWindow::setSaveDir()
         saveDir = url.toString().toStdString();
     }
     saveDir = saveDir.substr(saveDir.find("///") + 3);
-    // QString selectDir = QFileDialog::getExistingDirectory(this, "select record save dir", QString::fromStdString(saveDir), QFileDialog::ShowDirsOnly);
-    // saveDir = selectDir.toStdString();
     ui->tipLabel->setText(QString::fromStdString(saveDir));
     delete dialog;
 }

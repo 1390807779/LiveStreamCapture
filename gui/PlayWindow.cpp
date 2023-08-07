@@ -17,8 +17,8 @@ using namespace std;
 
 const int SDLAudioMinBufferSize = 512;
 const int SDLAudioMaxCallbackPerSec = 30;
-const int videoBufferSize = 15;
-const int audioBufferSize = 40;
+const int videoBufferSize = 5;
+const int audioBufferSize = 15;
 const int audioHardwareBufferSize = 40960;
 
 int PlayWindow::reallocTexture(uint32_t format, int width, int height, uint32_t blendMode, int isInit)

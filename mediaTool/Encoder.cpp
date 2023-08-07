@@ -28,38 +28,36 @@ std::shared_ptr<Frame> Encoder::transformImageFrame(std::shared_ptr<Frame> frame
     {
         return frame;
     }
-    return frame;
 
-    // TODO
-    // AVFrame *newFrame = av_frame_alloc();
-    // newFrame->format = encContext->pix_fmt;
-    // newFrame->width = encContext->width;
-    // newFrame->height = encContext->height;
-    // av_dict_copy(&newFrame->metadata, frame->frame->metadata, 0);
-    // av_frame_get_buffer(newFrame, 0);
-    // shared_ptr<ImageSwsContext> imageSwsContext = make_shared<ImageSwsContext>();
-    // shared_ptr<ImageParam> inImageParam = make_shared<ImageParam>();
-    // shared_ptr<ImageParam> outImageParam = make_shared<ImageParam>();
-    // inImageParam->format = frame->frame->format;
-    // inImageParam->width = frame->frame->width;
-    // inImageParam->height = frame->frame->height;
-    // outImageParam->format = encContext->pix_fmt;
-    // outImageParam->width = encContext->width;
-    // outImageParam->height = encContext->height;
-    // outImageParam->swsFlags = SWS_BICUBIC;
-    // imageSwsContext->setFormatImageSwsContextWithTwoParam(inImageParam, outImageParam);
-    // shared_ptr<Frame> outFrame = make_shared<Frame>(newFrame);
-    // ret = imageSwsContext->scaleImage(frame->frame->data, frame->frame->linesize, outFrame->frame->data, outFrame->frame->linesize);
-    // if (ret < 0)
-    // {
-    //     cout << "scaleImageFailed" << endl;
-    //     return nullptr;
-    // }
-    // outFrame->frame->width = encContext->width;
-    // outFrame->frame->height = encContext->height;
-    // outFrame->frame->format = static_cast<int>(encContext->pix_fmt);
-    
-    // return outFrame;
+    AVFrame *newFrame = av_frame_alloc();
+    newFrame->format = encContext->pix_fmt;
+    newFrame->width = encContext->width;
+    newFrame->height = encContext->height;
+    av_frame_get_buffer(newFrame, 0);
+    int test = av_frame_copy_props(newFrame, frame->frame);
+    shared_ptr<ImageSwsContext> imageSwsContext = make_shared<ImageSwsContext>();
+    shared_ptr<ImageParam> inImageParam = make_shared<ImageParam>();
+    shared_ptr<ImageParam> outImageParam = make_shared<ImageParam>();
+    inImageParam->format = frame->frame->format;
+    inImageParam->width = frame->frame->width;
+    inImageParam->height = frame->frame->height;
+    outImageParam->format = encContext->pix_fmt;
+    outImageParam->width = encContext->width;
+    outImageParam->height = encContext->height;
+    imageSwsContext->setFormatImageSwsContextWithTwoParam(inImageParam, outImageParam);
+    shared_ptr<Frame> outFrame = make_shared<Frame>(newFrame);
+    av_frame_free(&newFrame);
+    ret = imageSwsContext->scaleImage(frame->frame->data, frame->frame->linesize, outFrame->frame->data, outFrame->frame->linesize);
+    if (ret < 0)
+    {
+        cout << "scaleImageFailed" << endl;
+        return nullptr;
+    }
+    outFrame->frame->width = encContext->width;
+    outFrame->frame->height = encContext->height;
+    outFrame->frame->format = static_cast<int>(encContext->pix_fmt);
+
+    return outFrame;
 }
 
 std::shared_ptr<Frame> Encoder::transformAudioFrame(std::shared_ptr<Frame> frame)
@@ -400,7 +398,7 @@ EncodeStateType Encoder::encodeOnce(AVMediaType type, std::shared_ptr<Frame> fra
         cout << "failed to write the header" << endl;
         return encodeError;
     }
-    isWritenHeader = true;
+    isWritenHeader = true; 
     shared_ptr<Frame> outFrame = transformFrame(type, frame);
     if (!outFrame && frame)
     {
@@ -419,16 +417,9 @@ EncodeStateType Encoder::encodeOnce(AVMediaType type, std::shared_ptr<Frame> fra
     }
     else
     {
-        ret = av_frame_make_writable(outFrame->frame);
-        if (ret < 0)
-        {
-            cout << "frame is unwritable" << endl;
-            return encodeError;
-        }
         outFrame->isInput = true;
         outFrame->frame->pts = outFrame->frame->pts - startTime;
         outFrame->frame->pts = av_rescale_q(outFrame->frame->pts, outputStream->dataTimeBase, outputStream->encContext->time_base);
-        // AVFrame *sendFrame = deepCloneFrame(type, outFrame->frame);
         ret = avcodec_send_frame(outputStream->encContext, outFrame->frame);
         av_frame_unref(outFrame->frame);
     }
@@ -451,15 +442,13 @@ EncodeStateType Encoder::encodeOnce(AVMediaType type, std::shared_ptr<Frame> fra
             av_packet_unref(outputStream->packet);
             return encodeError;
         }
-        // outputStream->packet->pts = av_rescale_q(outputStream->count, outputStream->dataTimeBase, outputStream->encContext->time_base);
-        // outputStream->packet->dts = outputStream->packet->pts;
         av_packet_rescale_ts(outputStream->packet, outputStream->encContext->time_base, outputStream->stream->time_base);
         outputStream->packet->stream_index = outputStream->stream->index;
         ret = pushPacketToBuffer(type, outputStream->packet);
+        av_packet_unref(outputStream->packet);
         if (ret < 0)
         {
             cout << "Error while writing output packet" << endl;
-            av_packet_unref(outputStream->packet);
             return encodeError;
         }
     }
@@ -566,19 +555,21 @@ int OutputStream::initEncContext(AVFormatContext *fmtContext)
         encContext->sample_fmt = audioOption.sampleFormat;
         encContext->bit_rate = audioOption.bitRate;
         encContext->sample_rate = audioOption.sampleRate;
-        encContext->thread_count = 1;
+        encContext->thread_count = 2;
         stream->time_base = audioOption.timeBase;
         av_channel_layout_copy(&encContext->ch_layout, &audioOption.channelLayout);
         dataTimeBase = audioOption.dataTimeBase;
         break;
     case AVMEDIA_TYPE_VIDEO:
-        encContext->bit_rate = videoOption.bitRate;
-        encContext->width = videoOption.width;
-        encContext->height = videoOption.height;
-        encContext->gop_size = videoOption.gopSize;
+        encContext->bit_rate = videoOption.bitRate > 4000000 ? 4000000 : videoOption.bitRate;
+        encContext->width = videoOption.width > 1280 && videoOption.width > videoOption.height ? 1280 : videoOption.width;
+        encContext->height = videoOption.height > 720 && videoOption.width > videoOption.height ? 720 : videoOption.height;
+        encContext->gop_size = videoOption.gopSize < 60 ? 60 :videoOption.gopSize;
         encContext->pix_fmt = videoOption.pixelFormat;
         encContext->framerate = av_inv_q(videoOption.timeBase);
-        encContext->thread_count = 2;
+        encContext->qmin = 10;
+        encContext->qmax = 30;
+        encContext->thread_count = 8;
         stream->time_base = videoOption.timeBase;
         encContext->time_base = videoOption.timeBase;
         dataTimeBase = videoOption.dataTimeBase;
@@ -613,8 +604,8 @@ int OutputStream::initEncContextWithDecContext(AVFormatContext *fmtContext, AVCo
             av_channel_layout_copy(&audioOption.channelLayout, &decContext->ch_layout);
             audioOption.sampleFormat = decContext->sample_fmt;
             audioOption.sampleRate = decContext->sample_rate;
-            audioOption.timeBase = (AVRational){1, decContext->sample_rate};
-            audioOption.dataTimeBase = stream ? stream->time_base : (AVRational){1, decContext->sample_rate};
+            audioOption.timeBase = av_make_q(1, decContext->sample_rate);
+            audioOption.dataTimeBase = stream ? stream->time_base : av_make_q(1, decContext->sample_rate);
             break;
         case AVMEDIA_TYPE_VIDEO:
             videoOption.bitRate = decContext->bit_rate;

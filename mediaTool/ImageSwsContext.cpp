@@ -25,7 +25,8 @@ inline void ImageParam::operator=(ImageParam _imageParam)
 }
 
 ImageSwsContext::ImageSwsContext():
-    imageSwsContext(nullptr)
+    imageSwsContext(nullptr),
+    imageParam(make_shared<ImageParam>())
 {
 }
 
